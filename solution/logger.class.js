@@ -62,7 +62,6 @@ class Logger {
         let max = this.#logs.length;
         while (min < max) {
             let middle = (min + max) >>> 1;
-            const d = Number(this.#logs[middle].date);
             if (Number(this.#logs[middle].date) < date) {
                 min = middle + 1;
             } else {
